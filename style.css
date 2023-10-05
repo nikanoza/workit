@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope&display=swap");
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Manrope', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkviolet: #24053e;
+  --green: #44ffa1;
+  --silver: #584d62;
+  --light: #fcf8ff;
+  --white: #ffffff;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.fraunces_L {
+  font-family: "Fraunces", serif;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.fraunces_M {
+  font-family: "Fraunces", serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.fraunces_S {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+.manrope_S {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+main {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  background-image: url(./assets/images/Rectangle_m.png);
+  background-repeat: no-repeat;
+  background-size: 100% 481.707px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.apply-btn {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.16px;
+  background: transparent;
+  border: none;
+}
+
+.apply-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--green);
+}
+
+.content {
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  width: fit-content;
+  color: var(--white);
+  text-align: center;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 50px;
+  position: relative;
+}
+
+.wrapper {
+  width: fit-content;
+  margin-top: 64px;
+  position: relative;
+}
+.title::before {
+  content: "";
+  width: 173px;
+  height: 3px;
+  background: var(--green);
+  position: absolute;
+  top: 46px;
+  left: 116px;
+}
+
+.more-btn {
+  color: var(--darkviolet);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.16px;
+  padding: 12px 24px;
+  background: var(--green);
+  margin-top: 40px;
+}
+
+.hero {
+  width: 298.305px;
+  height: 178.159px;
+  margin-top: 64px;
+}
+
+.info-list {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-item span {
+  width: 48px;
+  height: 46px;
+  border: 1px solid var(--silver);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkviolet);
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.info-item h3 {
+  margin-top: 24px;
+  color: var(--darkviolet);
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.info-item p {
+  color: var(--silver);
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.founder-info {
+  width: 100%;
+  margin-top: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founder-img {
+  width: 281px;
+  height: 281px;
+}
+
+.founder-box {
+  margin-top: -53px;
+  background: var(--darkviolet);
+  color: var(--white);
+  width: 100%;
+  max-width: 514px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founder-box p {
+  color: var(--White, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.founder-box button {
+  color: var(--darkviolet);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.16px;
+  padding: 12px 24px;
+  margin-top: 24px;
+  background: var(--green);
+  border: none;
+}
+
+.dark-logo {
+  margin-top: 74px;
+}
+
+.social-icons-list {
+  margin-top: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .founder-info {
+    align-items: flex-start;
+  }
+  .fraunces_S {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
